@@ -7,7 +7,9 @@
 
     if (!$koneksi){
         die("Koneksi gagal: " . mysqli_connect_error());
-    } else {
-        echo "Koneksi Berhasil!";
-    }
+    } 
+    
+    // else {
+    //     echo "Koneksi Berhasil!";
+    // }
 ?>

@@ -15,8 +15,8 @@
         //session ini variabel baru
         $_SESSION['user_nama'] = $user['nama'];
         $_SESSION['user_id'] = $user['id'];
-        $_SESSION['logged_in'] = true;
-        $_SESSION['logged_success'] = "Login berhasil!";
+        $_SESSION['loged_in'] = true;
+        //$_SESSION['logged_success'] = "Login berhasil!";
         header('Location: halo.php');
         exit(); // menghentikan eksekusi script
     } else {

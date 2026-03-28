@@ -18,7 +18,8 @@
 </head>
 <body>
     <?php 
-        $nama = $_POST['nama'];
+        // $nama = $_POST['nama'];
+        $nama = $_SESSION['user_nama'];
     ?>
     <h1>
         <?php 
@@ -28,7 +29,7 @@
         Welcome <?php echo $nama ?>!!</h1>
 
         <img src="kucing-garong.jpg" alt="kucing garong">
-        <button type="button" class="btn btn-secondary">Logout</button>
+        <a href="logout.php"><button type="button" class="btn btn-secondary">Logout</button></a>
     
         <?php }
             else {

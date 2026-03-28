@@ -1,5 +1,6 @@
 <?php 
     session_start();
+    include 'koneksi.php';
 ?>
 
 <!DOCTYPE html>
@@ -59,21 +60,21 @@
             <h2 class="beda">Mari Join Komunitas</h2>
             <?php 
                 if (isset($_SESSION['login_error'])){
-                    echo '<div class="error-message show>';
+                    echo '<div class="error-message show">';
                     echo htmlspecialchars($_SESSION['login_error']);
                     echo '</div>';
                     unset($_SESSION['login_error']); // menghapus session setelah ditampilkan
                 }
             ?>
             <!-- <form action="halo.php" method="POST"> -->
-            <form action="proses-login.php" method="POST">
+            <form action="proses_login.php" method="POST">
                 <label for="nama" class="nama">Nama:</label>
                 <input type="text" id="nama" name="nama">
 
                 <label for="password" class="password">Password:</label>
                 <input type="password" id="password" name="password">
 
-                <button class="submit" type="submit">Submit</button>
+                <button class="submit" type="submit" value="kirim">Submit</button>
                 <button class="reset" type="reset">Reset</button>
 
                 <!-- <table>
